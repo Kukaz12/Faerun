@@ -4905,7 +4905,7 @@ character_event = {
 }
 
 
-### A Chinese Prince/Princess has died - Sends event to spouse or child ### (fired from on_death)
+### A Shou Lung Prince/Princess has died - Sends event to spouse or child ### (fired from on_death)
 character_event = { #
     id = JD.10080
     is_triggered_only = yes
@@ -4920,7 +4920,7 @@ character_event = { #
 		}
     	NAND = {
 	    	killer = { character = liege }
-			OR = { #make sure China doesn't know they were actually murdered by you
+			OR = { #make sure shou_lung doesn't know they were actually murdered by you
 				death_murder_known_trigger = yes
 				death_execution_trigger = yes
 				death_sacrificed_trigger = yes
@@ -4960,7 +4960,7 @@ character_event = { #
 			}    			
 		}
     	random_list = {
-    		40 = { #China sends their condolences...
+    		40 = { #Shou Lung sends their condolences...
     			random_spouse = {
     				limit = {
     					ai = no
@@ -5029,7 +5029,7 @@ character_event = { #
     				}
     			}
     		}
-    		30 = { #China sends you an artifact
+    		30 = { #Shou Lung sends you an artifact
 				add_shou_lung_artifact_effect = yes
 
 				while = { #runs until it finds an appropriate artifact...
@@ -5201,7 +5201,7 @@ character_event = { #
 		        }
     		}
     		15 = {
-    			#Nothing happens (more likely if China is busy with other stuff)
+    			#Nothing happens (more likely if Shou Lung is busy with other stuff)
     			set_character_flag = nothing_happened
     			modifier = {
 		            factor = 5
@@ -5210,7 +5210,7 @@ character_event = { #
     		}
     	}
     	if = { limit = { NOT = { has_character_flag = nothing_happened } }
-    		set_character_flag = ignore_refund #(blocks the other letter of condolences-event from China)
+    		set_character_flag = ignore_refund #(blocks the other letter of condolences-event from shou_lung)
     	}
     }
 }
@@ -5287,7 +5287,7 @@ character_event = {
 }
 
 ### For a spouse or child ###
-character_event = { #China sends their condolences, in the form of a LETTER...
+character_event = { #Protector General of Western Shou Provinces sends their condolences, in the form of a LETTER...
     id = JD.10081
     desc = EVTDESC_JD_10081
     picture = GFX_evt_chinese_bureaucrat
@@ -5359,7 +5359,7 @@ character_event = { #China sends their condolences, in the form of a LETTER...
 }
 
 ### For a spouse or child ###
-character_event = { #China sends their condolences, in the form of a GIFT...
+character_event = { #Protector General of Western Shou Provinces sends their condolences, in the form of a GIFT...
     id = JD.10082
     desc = EVTDESC_JD_10082
     picture = GFX_evt_chinese_bureaucrat
