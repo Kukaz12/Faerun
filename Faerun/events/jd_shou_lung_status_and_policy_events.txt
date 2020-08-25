@@ -1356,7 +1356,7 @@ character_event = {
 									}
 								}
 							}
-							event_target:tuigan_shou_lung_invader = { # The Borjigin who invaded China gets a bunch of Grace, Prestige, Gold, a Peace Deal and a few Siege Engineers when winning
+							event_target:tuigan_shou_lung_invader = { # The Tuigans who invaded Shou Lung gets a bunch of Grace, Prestige, Gold, a Peace Deal and a few Siege Engineers when winning
 								wealth = 1000
 								prestige = 1000
 								add_offmap_currency = {
